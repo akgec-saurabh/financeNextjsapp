@@ -36,7 +36,7 @@ const Investor = () => {
       </div>
       <div className={styles.featureCompanyContainer}>
         {dataFeature.map((i, k) => (
-          <div className={styles.featureCompany}>
+          <div key={k} className={styles.featureCompany}>
             <div className={styles.featureCompanyImage}>
               <Image src={`/${i}.png`} alt={i} fill />
             </div>
@@ -48,7 +48,7 @@ const Investor = () => {
       </div>
       <div className={styles.investorCompanyContainer}>
         {dataCompany.map((i, k) => (
-          <div className={styles.investorCompany}>
+          <div key={k} className={styles.investorCompany}>
             <div className={styles.investorCompanyImage}>
               <Image src={`/${i}.png`} alt={i} fill />
             </div>
@@ -58,7 +58,7 @@ const Investor = () => {
 
       <div className={styles.investorPersonContainer}>
         {dataPerson.map((i, k) => (
-          <div className={styles.investorContainer}>
+          <div key={k} className={styles.investorContainer}>
             <div className={styles.investorPersonImage}>
               <Image src={`/Inv${k + 1}.png`} alt="" fill />
             </div>

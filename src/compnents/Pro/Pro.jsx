@@ -44,7 +44,12 @@ const Pro = () => {
               <div className={styles.animated}>
                 <div className={styles.line}></div>
               </div>
-              <Image src="/googleplay.svg" alt="" width={110} height={50} />
+              <Image
+                src="/googleplay.svg"
+                alt="google play"
+                width={110}
+                height={50}
+              />
             </div>
             <div className={styles.videoContainer}>
               <video
@@ -69,7 +74,12 @@ const Pro = () => {
               <div className={styles.animated}>
                 <div className={styles.line}></div>
               </div>
-              <Image src="/googleplay.svg" alt="" width={110} height={50} />
+              <Image
+                src="/googleplay.svg"
+                alt="google play"
+                width={110}
+                height={50}
+              />
             </div>
             <div className={styles.videoContainer}>
               <video
@@ -93,7 +103,12 @@ const Pro = () => {
               <div className={styles.animated}>
                 <div className={styles.line}></div>
               </div>
-              <Image src="/googleplay.svg" alt="" width={110} height={50} />
+              <Image
+                src="/googleplay.svg"
+                alt="google play"
+                width={110}
+                height={50}
+              />
             </div>
             <div className={styles.videoContainer}>
               <video

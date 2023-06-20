@@ -17,7 +17,7 @@ const Founder = () => {
       </div>
       <div className={styles.founders}>
         {data.map((i, k) => (
-          <div className={styles.founder}>
+          <div key={k} className={styles.founder}>
             <div className={styles.imageContainer}>
               <Image src={`/${i.img}`} alt={i.name} fill />
             </div>

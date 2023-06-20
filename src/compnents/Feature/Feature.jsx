@@ -37,7 +37,13 @@ const Feature = () => {
   }, []);
   return (
     <div className={styles.container}>
-      <Image className={styles.web} width={243} height={641} src="/bgImg.png" />
+      <Image
+        className={styles.web}
+        width={243}
+        height={641}
+        src="/bgImg.png"
+        alt="background"
+      />
 
       <div className={styles.heroContainer}>
         <p className={styles.title}>
@@ -50,6 +56,7 @@ const Feature = () => {
           src="/whyUsHero.png"
           width={277}
           height={374}
+          alt="hero iamge"
         />
       </div>
       <div
@@ -58,7 +65,7 @@ const Feature = () => {
         className={styles.featureContainer}
       >
         {["1", "2", "3", "4", "5", "6"].map((i, k) => (
-          <div className={styles.feature}>
+          <div key={k} className={styles.feature}>
             <Image width={96} height={96} src={`/${i}.svg`} alt="" />
             <p className={styles.ftitle}>{data[k].title}</p>
             <p className={styles.ftext}>{data[k].text}</p>
