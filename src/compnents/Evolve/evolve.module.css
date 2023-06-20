@@ -1,0 +1,52 @@
+.container {
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 0.5rem 12rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1872/460;
+  margin: 4rem auto;
+}
+
+.imageWrapper {
+  overflow-x: auto;
+}
+
+/* -------------------------------------------------------- */
+
+@media (max-width: 1440px) {
+  .heading {
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 1240px) {
+  .heading {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 1080px) {
+  .heading {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 786px) {
+  .heading {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    padding: 2rem 1rem;
+  }
+  .imageContainer {
+    width: 250%;
+  }
+}

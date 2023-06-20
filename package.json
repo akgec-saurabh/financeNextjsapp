@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.4.6",
+    "aos": "^2.3.4",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.6",
     "next": "13.4.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.147",
+    "swiper": "^9.4.1"
   }
 }

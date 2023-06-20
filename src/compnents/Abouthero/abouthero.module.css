@@ -1,0 +1,60 @@
+.container {
+  height: 100vh;
+}
+.heroContainer {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  aspect-ratio: 2880/1330;
+}
+.heroContainer img {
+  object-fit: cover;
+}
+
+.dataContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.head {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0.5rem auto;
+}
+
+.tagline {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 786px) {
+  .heroContainer {
+    height: 100%;
+  }
+  .tagline {
+    line-height: 20px;
+  }
+  .dataContainer {
+    top: 60%;
+  }
+}
+@media (max-width: 1240px) {
+}
+@media (max-width: 1440px) {
+  .dataContainer {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,118 @@
+.containers {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 30rem;
+}
+
+.container {
+  padding: 1rem 10rem;
+  z-index: 2;
+}
+.logoContainer {
+  border-bottom: 1px solid rgb(236, 239, 245);
+}
+
+.fbackimg {
+  object-fit: fill;
+}
+
+.itemContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.footer__logoContainer {
+  height: 4rem;
+  width: 4rem;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.footer__logo {
+  object-fit: contain;
+}
+
+.iconContainer {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+}
+
+.imgContainer {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.iconContainer + div {
+  margin-left: 10px;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+}
+
+.item > ul > .heading {
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+.social > ul > :nth-child(2) {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.item > ul > li {
+  color: #fff;
+  font-size: 16px;
+}
+
+.item li div {
+  font-size: 16px;
+}
+
+.item li {
+  margin: 8px 0;
+}
+
+/* ------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  .container {
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .social {
+    position: absolute;
+    bottom: -5rem;
+  }
+
+  .item {
+    font-size: 10px;
+  }
+
+  .heading {
+    font-size: 12px;
+  }
+}

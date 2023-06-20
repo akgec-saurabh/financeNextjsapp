@@ -1,0 +1,116 @@
+.container {
+  padding: 0.5rem 12rem;
+}
+
+.heading {
+  margin: 3rem 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.investorCompanyContainer {
+  display: grid;
+  gap: 2vw;
+  margin-top: 4vw;
+  position: inherit;
+  z-index: 10;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.investorCompany {
+  padding: 2rem;
+  width: 100%;
+}
+
+.investorCompanyImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 60/32;
+}
+.featureCompanyContainer {
+  display: grid;
+  gap: 2vw;
+  margin-top: 4vw;
+  position: inherit;
+  z-index: 10;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.featureCompany {
+  /* padding: 2rem; */
+  width: 100%;
+}
+
+.featureCompanyImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 472/320;
+}
+
+/* ------------------------------------------------------------- */
+.investorPersonContainer {
+  display: grid;
+  gap: 2vw;
+  margin-top: 4vw;
+  position: inherit;
+  z-index: 10;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.investorContainer {
+  padding: 2rem;
+}
+.investorPersonImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 400/340;
+}
+
+.name {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.desg {
+  margin-top: 2px;
+  font-size: 16px;
+  color: rgb(134, 145, 168);
+}
+
+/* -------------------------------------------------------- */
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+  .investorPersonContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .featureCompanyContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .investorCompanyContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+}
+.imageContainer {
+  position: relative;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 2880/1200;
+}

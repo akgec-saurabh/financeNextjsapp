@@ -1,0 +1,99 @@
+.card {
+  padding: 2rem;
+  z-index: 20;
+  position: relative;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+.cimageContainer {
+  position: relative;
+  width: 60%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.cimageContainer {
+  filter: grayscale(100%);
+  transition: all 0.1s;
+}
+
+.card:hover > .cimageContainer {
+  filter: grayscale(0);
+  transition: all 0.1s;
+}
+
+.card:hover {
+  background-color: white;
+  transition: all 0.1s;
+}
+
+.ctextContainer {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+
+.chead {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.ctext {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgb(54, 55, 75);
+}
+
+.firstc {
+  background-color: #edffec;
+}
+.secondc {
+  background-color: #fff1ca;
+}
+
+.thirdc {
+  background-color: #ffeee7;
+}
+
+.fourthc {
+  background-color: #fff5e7;
+}
+
+@media (max-width: 1240px) {
+  .card {
+    flex-direction: column;
+  }
+  .cimageContainer {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .cimageContainer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 786px) {
+  .card {
+    padding: 2rem;
+    /* margin: 1rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

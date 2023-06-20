@@ -1,0 +1,160 @@
+.container {
+  clip-path: polygon(0% 27%, 100% 0%, 100% 73%, 0% 100%);
+  background: rgb(10, 37, 64);
+  padding: 18% 12rem;
+  position: relative;
+}
+
+.head,
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.head {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.step {
+  font-size: 18px;
+  padding: 12px 26px 12px 18px;
+  background-color: rgb(83, 139, 255);
+  font-weight: 600;
+  border-radius: 2px;
+  width: fit-content;
+  color: white;
+  margin-bottom: 2vw;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.steptext {
+  color: rgb(158, 207, 255);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+.stepContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stepContainerText {
+  padding: 10rem;
+  width: 100%;
+}
+
+/* .videoContainer {
+  width: 40%;
+  padding: 1rem;
+} */
+
+.videoContainer {
+  width: 40%;
+  max-width: 600px; /* Set a maximum width for the container */
+  /* margin: 0 auto; Center the container horizontally */
+  padding: 1rem;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.animated {
+  width: 50%;
+  background-color: white;
+
+  height: 0.6rem;
+  border-radius: 24px;
+  margin: 1rem 0;
+}
+
+.line {
+  width: 0;
+  background-color: rgb(83, 139, 255);
+
+  height: 0.6rem;
+  border-radius: 24px;
+  animation: prog 5s infinite;
+  transition: all none;
+}
+
+@keyframes prog {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+/* ------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  .container {
+    padding: 15% 10rem;
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    padding: 15% 5rem;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    padding: 25% 3rem;
+  }
+  .stepContainerText {
+    padding: 5rem;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    padding: 25% 3rem;
+  }
+  .stepContainerText {
+    padding: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 30% 1rem;
+
+    clip-path: polygon(0% 13%, 100% 0%, 100% 87%, 0% 100%);
+  }
+
+  .head,
+  .text {
+    text-align: center;
+  }
+
+  .stepContainerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stepContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
