@@ -16,7 +16,7 @@ const About = () => {
       <Investor />
       <Founder />
       <div className={styles.imageContainer}>
-        <Image src="/aboutusfooter.png" fill alt="" />
+        <Image src="/AboutUsFooter.png" fill alt="About us" />
       </div>
     </div>
   );
